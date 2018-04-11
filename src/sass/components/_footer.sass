@@ -1,0 +1,98 @@
+.footer
+	// background-image: linear-gradient(180deg, #eaeff2 0%, #c2d1da 100%)
+	padding: 20px 0 25px
+	&__left
+		float: left
+		+r(1054)
+			float: none
+	&__right
+		float: right
+		+r(1054)
+			float: none
+			margin-bottom: 30px
+	&__inner
+		+clr
+
+.copy
+	opacity: 0.8
+	color: #3e7390
+	font-family: $GothamPro
+	font-size: 14px
+	font-weight: 400
+	+r(1054)
+		font-size: 13px
+
+.contact
+	display: flex
+	align-items: center
+	+r(1054)
+		display: flex
+		flex-direction: column-reverse
+		align-items: flex-start
+	&__tel
+		+r(1054)
+			margin-bottom: 15px
+	&__mail
+		margin: 0 40px
+		+r(1054)
+			margin: 0 0 15px
+		
+.address
+	display: flex
+	align-items: center
+	text-decoration: none
+	&__text
+		opacity: 0.8
+		color: #3e7390
+		font-family: $GothamPro
+		font-size: 14px
+		font-weight: 400
+		text-decoration: none
+		margin-left: 12px
+		+r(1054)
+			font-size: 13px  
+	&__icon
+		.icon-map
+			fill:#396f8c
+			&:hover
+				fill: #ee8a00
+
+.mail
+	display: flex
+	align-items: center
+	text-decoration: none
+	&__text
+		opacity: 0.8
+		color: #3e7390
+		font-family: $GothamPro
+		font-size: 14px
+		font-weight: 400
+		text-decoration: none
+		margin-left: 12px
+		+r(1054)
+			font-size: 13px 
+	&__icon
+		.icon-mail
+			fill:#396f8c
+			&:hover
+				fill: #ee8a00
+
+.tel
+	display: flex
+	align-items: center
+	text-decoration: none
+	&__text
+		opacity: 0.8
+		color: #3e7390
+		font-family: $GothamPro
+		font-size: 14px
+		font-weight: 400
+		text-decoration: none
+		margin-left: 12px
+		+r(1024)
+			font-size: 13px 
+	&__icon
+		.icon-phone
+			fill:#396f8c
+			&:hover
+				fill: #ee8a00

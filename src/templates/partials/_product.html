@@ -1,0 +1,36 @@
+{% set
+list = [
+    {
+        title: 'Мониторинг и тахография',
+        img: 'img/product1.png'
+    },
+    {
+        title: 'Системная интеграция',
+        img: 'img/product2.png'
+    },
+    {
+        title: 'ИТС',
+        img: 'img/product3.png'
+    },
+    {
+        title: 'Разработка ПО',
+        img: 'img/product4.png'
+    }
+]
+%}
+<!-- begin product -->
+<div class="product">
+	<div class="product__wrap wrap">	
+		<div class="product__list">
+			{% for item in list %}
+			<div class="product__item">
+				<img src="{{item.img}}" alt="product">
+				<div class="product__title">
+					<h3 class="h3">{{item.title}}</h3>
+				</div>
+			</div>
+			{% endfor %}
+		</div>	
+	</div>
+</div>
+<!-- end product -->

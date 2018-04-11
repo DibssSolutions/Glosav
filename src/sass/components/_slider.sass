@@ -1,0 +1,239 @@
+.slider-wrapp
+	+vertical
+	height: calc(100vh - 184.3px)
+	min-height: 530px
+	background: #eaeff2 
+	+md
+		height: auto 
+
+.slider
+	width: 100%
+	vertical-align: middle
+	display: inline-block 
+	overflow: hidden
+	transition: 2s
+	opacity: 1
+	visibility: visible
+	&__slides
+		+md
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+	&.close
+		opacity: 0
+		visibility: hidden
+	&__slide
+		// width: 93%
+		padding: 60px 0 65px
+		// max-width: 396px
+		&.open
+			filter: blur(5px)
+		+md
+			width: 35%
+			flex: 0 0 35%
+			padding: 20px 0
+		+r(500)
+			width: 50%
+			flex: 0 0 50%
+			
+
+.is-blur
+	filter: blur(5px)
+
+.switch
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #396f8c
+	font-family: GothamPro
+	font-size: 12px
+	font-weight: 500
+	// position: relative
+	z-index: 9
+	padding-top: 11px
+	+md
+		  display: none
+	&__title-from
+		margin-right: 10px
+	&__title-to
+		margin-left: 25px
+	&__icon-from
+		height: 5px
+		width: 5px
+		background-color: #fff
+		border-radius: 50%
+		padding: 15px
+		border: 1px solid #396f8c
+		position: relative
+		margin: 0 70px 0 10px 
+		&:before
+			position: absolute
+			content: ''
+			width: 5px
+			height: 5px
+			background-color: #396f8c
+			border-radius: 50%
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+		&:after
+			content: ''
+			position: absolute
+			left: 33px 
+			width: 64px
+			height: 1px
+			border: 1px dotted grey  
+	&__icon-to
+		height: 5px
+		width: 5px
+		background-color: #fff
+		border-radius: 50%
+		padding: 5px
+		border: 1px solid #396f8c
+		position: relative
+		margin-right: 10px 
+		&:before
+			position: absolute
+			content: ''
+			width: 5px
+			height: 5px
+			background-color: #396f8c
+			border-radius: 50%
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+		+md
+			display: none
+.switcher
+	.noUi-handle-lower
+		height: 5px
+		width: 5px
+		background-color: #fff
+		border-radius: 50%
+		padding: 15px
+		border: 1px solid #396f8c
+		// position: relative
+		// margin: 0 70px 0 10px
+		top: -17px
+		cursor: pointer
+		&:before
+			position: absolute
+			content: ''
+			width: 5px
+			height: 5px
+			background-color: #396f8c
+			border-radius: 50%
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+		&:after
+			display: none
+	.noUi-handle-upper
+		height: 5px
+		width: 5px
+		background-color: #fff
+		border-radius: 50%
+		padding: 5px
+		border: 1px solid #396f8c
+		// position: relative
+		cursor: pointer
+		// right: -66px 
+		// margin-left: 50px
+		&:before
+			position: absolute
+			content: ''
+			width: 5px
+			height: 5px
+			background-color: #396f8c
+			border-radius: 50%
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+		&:after
+			display: none
+		
+.noUi-target
+	width: 70px
+	margin-left: 20px  
+	height: 1px
+	border: 1px dotted grey
+
+.hero
+	position: relative
+	text-align: center
+	// margin: 0 40px
+	padding: 0 20px
+	color: #396f8c
+	font-family: $GothamPro
+	font-size: 20px
+	font-weight: 500
+	text-transform: uppercase
+	// background: url('../img/Vector-Smart Object.png') no-repeat
+	+sm
+		padding: 0 10px 
+	&:hover
+		filter: blur(0px)
+		color: #f58220
+	&:hover
+		transform: scale(1.05)
+	&:hover .hero__img:before
+		display: block
+	&:hover .hero__img:after
+		display: block
+	&:hover .hero__img
+		border: none
+	&__border-top
+		position: absolute
+		top: 10%
+		right: -20%
+		img
+			width: 100%
+	&__title
+		font-size: 11px
+	&__img
+		cursor: pointer
+		margin-bottom: 40px
+		position: relative
+		max-width: 370px 
+		z-index: 100
+		padding: 15px 
+		border: 2px solid #497084
+		border-radius: 50%
+		&:before
+			content: ''
+			background-image: url('../img/bordert.png')
+			position: absolute
+			left: -30px
+			bottom: -30px
+			right: -30px
+			top: -30px
+			z-index: 99 
+			background-size: 100% 100%
+			display: none
+		&:after
+			content: ''
+			background: url('../img/Border-b-4.png') no-repeat
+			position: absolute
+			z-index: 99 
+			top: -25px
+			left: -25px
+			bottom: -25px
+			right: -25px
+			background-size: 93% 100%
+			display: none
+		+sm
+			padding: 5px
+		img
+			display: block
+			position: relative
+			z-index: 100 
+			margin: 0 auto
+			width: 100% 
+			+r(1360)
+				width: 100%
+
+
+
+// .slider:hover img
+// 	-webkit-filter: blur(2px)
+

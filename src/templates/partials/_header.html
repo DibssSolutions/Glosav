@@ -1,0 +1,123 @@
+<!--begin header -->
+<div class="header {% if headerbg %}{{headerbg}}{% endif %}">
+	<div class="header__inner inner">
+		<div class="header__logo">
+			<div href="#" class="logo">
+				{{mixins.icon('glosav-logo')}}
+			</div>
+		</div>
+		<div class="header__right">
+			<div class="header__info info">
+				<div class="info__search search">
+					<input type="text" name="search" class="search__field js-field">
+					<a href="#" class="search__icon js-icon">
+						{{mixins.icon('search')}}
+					</a>
+				</div>
+				<a href="#" class="info__login login js-login">Войти</a>
+				
+				<div class="info__switcher-lang">
+					<div class="switcher-lang">
+						<a href="#" class="switcher-lang__title js-lang">
+							<span class="switcher-lang__title-text">Ru</span>
+							<span class="switcher-lang__icon">
+								<!-- <img src="img/shape.png" alt="arrow"> -->
+							</span>
+						</a>
+						<ul class="switcher-lang__list js-lang-list">
+							<li class="switcher-lang__item">
+								<a href="#" class="switcher-lang__link">Ua</a>
+							</li>
+							<li class="switcher-lang__item">
+								<a href="#" class="switcher-lang__link">En</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="page.html" class="menu__link">О компании</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Направления</a>
+					</li>
+					<li class="menu__item">
+						<a href="#"  class="menu__link">Продукты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Новости</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end header -->
+
+<!-- begin header-mobile -->
+<div class="header-mobile">
+	<div class="header-mobile__inner inner inner_mob">
+		<div class="header-mobile__menu-mobile menu-mobile">
+			<div class="header-menu__logo">
+				<div href="#" class="logo">
+					{{mixins.icon('glosav-logo')}}
+				</div>
+				<div href="#" class="logo-open">
+					{{mixins.icon('logo-mob')}}
+				</div>
+			</div>
+			<div class="menu-mobile__cross cross js-cross">
+					<span class="cross__item-top js-cross-top"></span>
+					<span class="cross__item-center js-cross-center"></span>
+
+					<span class="cross__item-bottom js-cross-bottom"></span>
+			</div>
+			<div class="menu-mobile__bg">
+				<div class="menu-mobile__wrapp">
+					<div class="menu-mobile__search search">
+						<input type="text" name="search" class="search__field search__field_bg js-field">
+						<a href="#" class="search__icon js-icon">
+							{{mixins.icon('search')}}
+						</a>
+					</div>
+					<ul class="menu-mobile__menu-mob menu-mob js-menu-mob">
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">О компании</a>				
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Направления</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Продукты</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Новости</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Контакты</a>
+						</li>
+					</ul>
+					<a href="#" class="menu-mobile__login login login_mob js-login">Войти</a>
+
+					<div class="menu-mobile__switcher-lang switcher-lang-mob">
+							<a href="#" class="switcher-lang-mob__title js-lang is-active">Ru</a>
+							<a href="#" class="switcher-lang-mob__title js-lang">Ua</a>
+							<a href="#" class="switcher-lang-mob__title js-lang">En</a>
+					</div>			
+				</div>
+			</div>
+			
+			
+		</div>		
+
+
+	</div>	
+	
+
+</div>
+<!-- end header-mobile -->

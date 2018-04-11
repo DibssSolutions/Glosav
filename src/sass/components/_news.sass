@@ -1,0 +1,191 @@
+.select
+	width: 255px
+	.select2-container--default .select2-selection--single
+		background: transparent
+		border: none
+		border-bottom: 1px dotted #a3bccb
+	.select2 .select2-container .select2-container--default
+.select2-dropdown
+	background-color: #eaeff2
+	border: none
+.select2-search--dropdown
+	display: none
+.select2-container .select2-selection--single .select2-selection__rendered
+	padding-right: 0
+	padding-left: 0
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	color: #f58220
+	background-color: #eaeff2
+.select2-container--default .select2-results__option[aria-selected=true]
+	background-color: #eaeff2
+.select2-container--default .select2-results__option[aria-selected=true]
+	display: none
+.select2-results__option
+	padding: 7px 0 7px 20px	
+.select2-container--default .select2-selection--single .select2-selection__rendered
+	color: #396f8c
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+	background: url('../img/arrow-select.png') no-repeat
+	border-color: transparent
+	border-style: none
+	width: 15px
+	height: 10px
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+	transform: rotate(180deg)
+
+.news
+	background: #EAEFF2
+	padding-bottom: 44px
+	&__wrapp-top
+		position: relative 
+	&__breadcrumbs
+		margin-bottom: 65px
+	&__select
+		margin-bottom: 25px
+		position: absolute
+		right: 0
+		top: -50px
+		+r(400)
+			position: relative
+			top: 0
+	&__content
+		position: relative
+	&__img	
+		margin-bottom: 0
+		display: flex
+		+xs
+			display: block
+		&_mar
+			margin-bottom: 0
+		img
+			width: 100%
+			display: block
+	&__bg
+		position: relative
+		padding-bottom: 95%
+		background-size: cover
+		&_small
+			background-size: cover
+			position: relative
+			padding-right: 30%
+			padding-bottom: 0
+			+md
+				display: none
+			+r(400)
+				display: block
+				padding-bottom: 95% 
+		&_ab 
+			background-size: cover
+			background-repeat: no-repeat 
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			padding-bottom: 0
+			+r(700)
+				position: relative;
+				padding-bottom: 100%
+	&__overlay
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background: linear-gradient(to top, white 0%, transparent 55%)
+		+r(400)
+			display: none 
+	&__info
+		padding: 20px
+		&_md
+			z-index: 10
+	&__title
+		margin-bottom: 20px
+		overflow: hidden
+		text-overflow: ellipsis
+		display: -webkit-box
+		-webkit-line-clamp: 5
+		-webkit-box-orient: vertical
+		&_dots
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-line-clamp: 3
+			-webkit-box-orient: vertical
+			height: 50px 
+	&__color
+		background: #fff
+		&:not(:last-child)
+			margin-bottom: 30px
+	&__padd
+		padding-bottom: 20px
+	&__in
+		height: 100%
+		background: #fff
+		position: relative
+		&_bg
+			position: relative
+			display: flex
+			justify-content: flex-end
+			flex-direction: column
+			&::before
+				position: absolute
+				background: linear-gradient(to top, white 0%, transparent 100%)
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+			img
+				display: block
+				max-width: 100%
+	&__button
+		text-align: right
+	&__row-wrap
+		display: flex
+		+xs
+			display: block
+	&__btn
+		display: flex
+		justify-content: center
+
+.news__row
+	margin: 0 -15px 25px
+	display: flex
+	flex-wrap: wrap
+	+clr
+
+.col
+	// height: 100%
+	margin-bottom: 30px
+	&_sm
+		width: 25%
+		flex: 0 0 25%
+		padding: 0 15px
+		+md
+			width: 33.33%
+			flex: 0 0 33.33%
+		+sm
+			width: 50%
+			flex: 0 0 50%
+		+r(400)
+			width: 100%
+			flex: 0 0 100%
+	&_md
+		width: 50%
+		flex: 0 0 50%
+		padding: 0 15px
+		+md
+			width: 33.33%
+			flex: 0 0 33.33%
+		+sm
+			width: 50%
+			flex: 0 0 50%
+		+r(400)
+			width: 100%
+			flex: 0 0 100%
+	&_bg
+		background: url('../img/news2.png') no-repeat
+	&_fl
+		display: flex
+		justify-content: space-between
+		flex-direction: column

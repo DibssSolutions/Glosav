@@ -1,0 +1,275 @@
+.direction-detail
+	position: relative
+	padding-bottom: 241px
+	+md
+		padding-bottom: 0
+	&__wrap
+		+md
+			background: #eaeff2
+	&__title
+		margin: 13px 0 15px 0
+	&__breadcrumbs
+		margin-bottom: 35px
+	&__bg
+		background-image: linear-gradient(180deg, white 0%, rgba(234, 239, 242, 0.01) 50%, transparent 100%), url('../img/direction.png')
+		background-repeat: no-repeat 
+		background-position: 50% 100%
+		background-size: cover
+		// padding-bottom: 22%
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0 
+		+md
+			background-image: url('../img/direction.png')
+			position: relative
+			padding-bottom: 34%
+
+.direction-content
+	margin-top: -122px
+	background: #eaeff2
+	+md
+		margin-top: 0
+		position: relative
+	&__what
+		max-width: 1130px
+		margin: 0 auto 
+		margin-bottom: 90px
+	&__slider-direction
+		margin-bottom: 90px   
+
+.drop
+	padding: 50px 120px 60px
+	background: #dee6eb
+	border-top: 4px solid #ee8a00
+	position: relative
+	+md
+		padding:  40px 20px 60px
+	&__col
+		&_c
+			text-align: center
+	
+.slider-direction
+	&__wrap
+		position: relative
+		max-width: 1210px
+		margin: 0 auto
+	&__inner
+		padding: 0 40px 
+	&__title
+		margin-bottom: 40px 
+	&__prev
+		background: url('../img/prev-arrow.png') no-repeat center
+		width: 60px
+		height: 20px
+		cursor: pointer
+		position: absolute
+		top: 41%
+		transform: translate(0,-50%)
+		left: 10px
+		z-index: 10
+		&.open
+			display: none
+	&__next
+		background: url('../img/prev-arrow.png') no-repeat center
+		width: 60px
+		height: 20px
+		cursor: pointer
+		position: absolute
+		top: 41%
+		transform: translate(0,-50%) rotate(180deg)
+		right: 10px
+		z-index: 10
+		&.open
+			display: none
+	&__slides
+		margin: 0 -40px
+		font-size: 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	&__slide
+		padding: 0 40px
+		width: 25%
+		+md
+			width: 33.33%
+		+r(650)
+			width: 50%
+		+r(400)
+			width: 100%  
+	&__btn
+		display: flex
+		justify-content: center
+		&.open
+			display: none
+
+	&__btn-close
+		display: none
+		&.open
+			display: flex
+			justify-content: center
+
+.item
+	text-align: center
+	cursor: pointer
+	padding-bottom: 40px 
+	&:hover .item__title .h4
+		color: #ee8a00
+	&__img
+		margin-bottom: 35px 
+		img
+			width: 100%
+			display: block
+
+.user
+	padding: 0 0 65px 
+	&__title
+		margin-bottom: 40px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+	&__item
+		width: 20%
+		height: 100px
+		text-align: center
+		// padding: 15px 0 13px
+		margin-bottom: 16px
+		display: block
+		position: relative
+		+md
+			width: 50%
+		+sm
+			height: 65px
+			margin-bottom: 0
+		.icon
+			position: absolute
+			transform: translate(-50%,-50%)
+			left: 50%
+			top: 50%
+			&.icon-sber_logo
+				// width: 182px
+				font-size: 40px
+				+sm
+					font-size: 26px
+			&.icon-latest
+				// width: 75px
+				// height: 80px
+				font-size: 75px 
+				+sm
+					font-size: 50px
+			&.icon-1280px-Gazprom-Logo-rus
+				font-size: 63px
+				+sm
+					font-size: 40px
+			&.icon-2000px-Dell_Logo
+				font-size: 80px
+				+sm
+					font-size: 50px
+			&.icon-alfabank
+				font-size: 50px
+				+sm
+					font-size: 30px
+			&.icon-googlelogo_color_120x44dp
+				font-size: 45px
+				+sm
+					font-size: 25px
+			&.icon-logo-skb-bank
+				font-size: 40px
+				+sm
+					font-size: 25px
+			&.icon-apple_logo_PNG19682
+				font-size: 70px
+				+sm
+					font-size: 45px
+			&.icon-MTS_logo_color_ru
+				font-size: 45px
+				+sm
+					font-size: 30px
+			&.icon-intel
+				font-size: 70px
+				+sm
+					font-size: 50px
+			
+		
+
+.join
+	border-top: 4px solid #ee8a00
+	background: #dee6eb
+	padding: 60px 0  
+	&__wrap
+		display: flex
+		justify-content: space-between
+		+md
+			flex-direction: column
+	&__col
+		width: 46%
+		+md
+			width: 70%
+			margin: 0 auto
+		+r(564)
+		 	width: 100%
+		&_t
+			+md
+				order: -1
+				margin-bottom: 40px 
+	&__title
+		margin-bottom: 45px
+	&__descr
+		p
+			line-height: 22px
+
+.drop
+	padding: 50px 120px 60px
+	background: #dee6eb
+	border-top: 4px solid #ee8a00
+	position: relative
+	&__wrap
+		height: 130px
+		overflow: hidden
+		transition: height 0.3s
+	&__title
+		margin-bottom: 35px
+		text-align: center
+		+md
+			margin-bottom: 30px  
+	&__back
+		position: absolute
+		bottom: -22px
+		left: 50%
+		transform: translate(-50%,0)
+	&__icon
+		transform: rotate(180deg)
+		&.open
+			transform: rotate(0deg)
+	&__col
+		p
+			margin-bottom: 30px
+
+.select-form
+	width: 100%
+	padding: 14px
+	background-color: #cbd9e1
+	border-radius: 24px
+	.select2-container--default .select2-selection--single
+		background: transparent
+		border: none
+	.select2-container--default .select2-selection--single .select2-selection__rendered
+		opacity: 0.7
+	
+	.select2-container--default .select2-selection--single .select2-selection__arrow b
+		background: url('../img/arrow-select.png') no-repeat
+		border-color: transparent
+		border-style: none
+		width: 15px
+		height: 10px
+	.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+		transform: rotate(180deg)
+.cart
+	img
+		width: 100%
+		display: block
+
+			
+	  

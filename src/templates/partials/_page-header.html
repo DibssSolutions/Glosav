@@ -1,0 +1,30 @@
+<div class="page-header page-header_bg">
+	<div class="page-header__wrap wrap">
+		<div class="page-header__title">
+			<h2 class="h2">{{title}}</h2>
+		</div>
+		<div class="page-header__breadcrumbs breadcrumbs">
+			<div class="breadcrumbs__dots js-dots">
+				<span class="breadcrumbs__dot"></span>
+				<span class="breadcrumbs__dot"></span>
+				<span class="breadcrumbs__dot"></span>
+			</div>
+			<div class="breadcrumbs__content">
+				<button class="breadcrumbs__close js-close">
+					<img src="img/close.png" alt="close"></button>
+				<ul class="breadcrumbs__list">
+					{% for link in breadcrumbs %}
+					<li class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">{{link.link}}</a>
+					</li>
+					{% if link.spans %}
+					<li class="breadcrumbs__item">
+						<span>{{link.span}}</span>
+					</li>
+					{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

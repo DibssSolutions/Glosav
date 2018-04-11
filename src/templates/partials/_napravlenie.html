@@ -1,0 +1,112 @@
+{% set
+list = [
+    {	
+    	img: 'img/Layer-10.png',
+        title: 'Мониторинг и тахография',
+        descr: 'Специализированная 	система, в состав которой входит расширенный набор бортового оборудования, обеспечивающий возможность контроля исполнительных механизмов специализированной техники. Расширенный функционал',
+        list2: [
+        	{
+				link: 'Строительство'
+			},
+			{
+				link: 'Топливозаправщик'
+			},
+			{
+				link: 'Перевозки'
+			},
+			{
+				link: 'Дистрибуция'
+			}
+   		 ]
+    },
+    {
+    	img: 'img/Layer-11.png',
+        title: 'Системная интеграция',
+        descr: 'Специализированная система, в состав которой входит расширенный набор бортового оборудования, обеспечивающий возможность контроля исполнительных механизмов специализированной техники. Расширенный функционал',
+        list2: [
+			{
+				link: 'ЖКХ'
+			},
+			{
+				link: 'Маркер'
+			},
+			{
+				link: 'Лизинг'
+			}
+   		 ]
+    },
+    {
+    	img: 'img/Layer-12.png',
+        title: 'ИТС',
+        descr: 'Специализированная система, в состав которой входит расширенный набор бортового оборудования, обеспечивающий возможность контроля исполнительных механизмов специализированной техники. Расширенный функционал',
+        list2: [
+        	{
+				link: 'Перевозки'
+			},
+			{
+				link: 'Топливозаправщик'
+			},
+			{
+				link: 'Маркер'
+			}
+   		 ]
+    },
+    {
+    	img: 'img/Layer-13.png',
+        title: 'Разработка ПО',
+        descr: 'Специализированная система, в состав которой входит расширенный набор бортового оборудования, обеспечивающий возможность контроля исполнительных механизмов специализированной техники. Расширенный функционал',
+        list2: [
+        	{
+				link: 'Перевозки'
+			},
+			{
+				link: 'Топливозаправщик'
+			},
+			{
+				link: 'Маркер'
+			},
+			{
+				link: 'Лизинг'
+			}
+   		 ]
+    }
+]
+%}
+<!-- begin napravlenie -->
+<div class="napravlenie">
+	<div class="napravlenie__wrap wrap">
+		<div class="napravlebnie__list list-napr">
+			{% for item in list %}
+			<!-- begin list-napr__item -->
+			<div class="list-napr__item">
+				<a href="#" class="list-napr__img">
+					<img src="{{item.img}}" alt=""></a>
+				<div class="list-napr__title">
+					<h3 class="h3">{{item.title}}</h3>
+				</div>
+				<div class="list-napr__descr">
+					<p>{{item.descr}}</p>
+				</div>
+				<div class="list-napr__button">
+					<a href="#" class="btn btn_darken">Подробнее</a>
+				</div>
+				<ul class="list-napr__sub-list">
+					{% for item in item.list2 %}
+					<li class="list-napr__sub-item">
+						<a href="#" class="list-napr__sub-link">{{item.link}}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<!-- end list-napr__item -->
+
+			{% endfor %}
+		</div>
+		<button class="napravlenie__back back js-drop">
+		    <div class="napravlenie__icon">
+		        <img src="img/arrow-top.png" alt="">
+		    </div>
+		</button>
+	</div>
+</div>
+<!-- end napravlenie -->

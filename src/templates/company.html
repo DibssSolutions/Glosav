@@ -1,0 +1,26 @@
+---
+title: О компании
+---
+{% set
+breadcrumbs = [
+    {
+        link: 'Главная',
+        spans: true,
+        span: 'О компании'
+    }
+]
+%}
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<div class="wrap-bg">
+		{% include "partials/_header.html" %}
+		{% include "partials/_page-header.html" %}
+    	{% include "partials/_company.html" %} 
+		{% include "partials/_footer.html" %} 
+	</div>
+	
+	{% include "partials/_popaps.html" %}
+
+{% endblock %}

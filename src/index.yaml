@@ -1,0 +1,25 @@
+ProjectTitle: glosav
+
+PageList:
+- file: page.html
+  ready: 50
+- file: promo.html
+  ready: 50
+- file: contact.html
+  ready: 50
+- file: news.html
+  ready: 50
+- file: text.html
+  ready: 100
+- file: napravlenie.html
+  ready: 100
+- file: direction-detail.html
+  ready: 100
+- file: vnedrenie.html
+  ready: 100
+- file: list-products.html
+  ready: 100
+- file: product.html
+  ready: 100
+- file: company.html
+  ready: 100

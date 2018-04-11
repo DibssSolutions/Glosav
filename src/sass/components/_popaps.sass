@@ -1,0 +1,39 @@
+.popap
+	background: grey
+	padding-top: 9%
+	position: relative
+	position: fixed
+	height: 100vh
+	z-index: 1000  
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0 
+	background: rgba(97, 132, 150, 0.7)
+	width: 100%
+	display: none
+	transition: 1s 
+	&.open
+		display: block
+	+md
+		padding-top: 2%
+
+.content
+	background-color: white
+	border-radius: 30px
+	margin: 0 auto
+	max-width: 420px
+	padding: 40px 
+	position: relative
+	+xs
+		max-width: 300px
+	&__title
+		color: #2c5b72
+		font-family: $GothamPro
+		font-size: 18px
+		font-weight: 500
+		margin-bottom: 30px
+	&__back
+		position: absolute
+		top: -20px
+		right: -20px

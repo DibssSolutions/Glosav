@@ -1,0 +1,414 @@
+.popap-circle
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	z-index: 10
+	overflow: auto
+	// height: 100vh
+	// padding-top: 100px 	
+	height: 100%
+	background: #eaeff2
+	display: none
+	&.open
+		display: block
+	+md
+		// position: static
+		position: fixed
+		z-index: 100
+		overflow: auto
+		padding-top: 100px
+	&__wrap
+		position: relative
+		max-width: 920px
+		margin: 0 auto
+		top: 50%
+		transform: translate(0, -50%)
+		// padding: 20px 0
+		+md
+			top: 0
+			transform: translate(0, 0)
+			padding: 0 20px 
+	&__photo
+		display: none
+		position: relative
+		+md
+			display: block
+			text-align: center
+			margin: 0 auto 40px
+			width: 53%
+		img
+			display: block
+			width: 100% 
+		&:before
+			content: ''
+			background-image: url('../img/bordert.png')
+			position: absolute
+			left: -30px
+			bottom: -30px
+			right: -30px
+			top: -30px
+			// z-index: 9 
+			background-size: 100% 100%
+		&:after
+			content: ''
+			background: url('../img/Border-b-4.png') no-repeat
+			position: absolute
+			// z-index: 9 
+			top: -25px
+			left: -25px
+			bottom: -25px
+			right: -25px
+			background-size: 93% 100%
+	&__fon-left
+		position: absolute
+		top: 14%
+		left: 22%
+		[data-circle="2"] &
+			display: none
+		[data-circle="1"] &
+			display: none
+		[data-circle="4"] &
+			display: none
+		+md
+			display: none
+	&__fon-sm
+		position: absolute
+		left: 22%
+		top: 28%
+		[data-circle="6"] &
+			display: none
+		[data-circle="5"] &
+			display: none
+		[data-circle="3"] &
+			display: none
+		[data-circle="1"] &
+			display: none		
+		+md
+			display: none
+	&__fon-sm-r
+		position: absolute
+		right: 22%
+		top: 28%
+		[data-circle="1"] &
+			display: none
+		[data-circle="2"] &
+			display: none
+		[data-circle="3"] &
+			display: none
+		[data-circle="6"] &
+			display: none
+		+md
+			display: none
+	&__fon-right
+		position: absolute
+		top: 14%
+		right: 22%
+		transform: rotate(180deg)
+		[data-circle="2"] &
+			display: none
+		[data-circle="5"] &
+			display: none
+		[data-circle="4"] &
+			display: none
+			display: none
+		[data-circle="3"] &
+			display: none
+		[data-circle="1"] &
+			display: none
+		+md
+			display: none
+	&__circle
+		position: relative 
+		// opacity: 0.1
+		padding: 70px 0 
+		max-width: 405px
+		margin: 0 auto 58px
+		+md
+			padding: 0
+			margin-bottom: 35px
+		&:before
+			content: ''
+			background-image: url('../img/bordert.png')
+			position: absolute
+			left: -30px
+			bottom: -30px
+			right: -30px
+			top: -30px
+			// z-index: 9 
+			background-size: 100% 100%
+			+md
+				display: none
+		&:after
+			content: ''
+			background: url('../img/Border-b-4.png') no-repeat
+			position: absolute
+			// z-index: 9 
+			top: -25px
+			left: -25px
+			bottom: -25px
+			right: -25px
+			background-size: 93% 100%
+			+md
+				display: none
+	&__bg
+		background: rgba(93, 131, 151, 0.7)
+		position: absolute
+		border-radius: 50%
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		+md
+			display: none
+	&__info
+		position: relative
+	&__descr
+		color: white
+		font-family: $GothamPro
+		font-size: 16px
+		font-weight: 400
+		text-align: center
+		max-width: 329px
+		padding: 22px
+		margin: 0 auto 10px
+		+md
+			color: #2c5b72
+			text-align: left
+			padding: 0
+			margin: 0 0 40px 0
+	&__button
+		display: flex
+		justify-content: center
+		position: relative
+		z-index: 100
+		+md
+			justify-content: flex-start
+			.btn
+				color: #2e5b72
+				border: 1px solid #7fa4bc
+				transition: 0.5s
+				&:hover
+					background-color: #2c5b72
+					color: white
+	&__title
+		font-family: $GothamPro
+		color: #f58220
+		font-size: 20px
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+		margin: 0 auto
+		position: absolute
+		bottom: -105px
+		left: 0
+		right: 0
+		+md
+			position: static
+			color: #396f8c
+			text-align: center
+			font-size: 16px
+			font-weight: 500
+			max-width: 100%
+			margin-bottom: 40px
+	&__back
+		position: absolute
+		right: 14%
+		top: 5%
+		z-index: 10
+		+md
+			top: -30px
+			right: 0
+	&__text
+		+md
+			margin-left: 20px 
+	&__icon
+		margin-bottom: 7px
+		// img
+		// 	width: 100%
+		// 	display: block
+		+md
+			max-width: 99px 
+			img
+				width: 100%
+				display: block
+	&__item
+		max-width: 250px
+		color: #2c5b72
+		font-family: GothamPro
+		font-size: 14px
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+		+md
+			max-width: 405px 
+			margin: 0 auto 
+			display: flex
+			align-items: center
+			margin-bottom: 15px
+		&:nth-child(1)
+			position: absolute
+			left: 6%
+			top: -19%
+			+md
+				position: static
+			&:before
+				content: ''
+				position: absolute
+				width: 68px
+				height: 2px
+				background: #2e5b72
+				right: -56px
+				top: 74%
+				transform: rotate(33deg)
+				+md
+					display: none
+				[data-circle="1"] &
+					display: none
+			[data-circle="1"] &
+				top: 0%
+			[data-circle="4"] &
+				top: -5%
+				left: 3%
+			[data-circle="2"] &
+				top: -5%
+				left: 3% 
+		&:nth-child(3)
+			position: absolute
+			left: 0
+			top: 31%
+			+md
+				position: static
+			&:before
+				content: ''
+				position: absolute
+				width: 68px
+				height: 2px
+				background: #2e5b72
+				right: -67px
+				top: 41%
+				+md
+					display: none
+				[data-circle="4"] &
+					transform: rotate(-33deg)
+					top: 23%
+					right: -63px
+			[data-circle="4"] &
+				top: 60%
+				left: 2%
+				
+		&:nth-child(2)
+			position: absolute
+			right: 6%
+			top: -19%
+			+md
+				position: static
+			&:before
+				content: ''
+				position: absolute
+				width: 68px
+				height: 2px
+				background: #2e5b72
+				left: -56px
+				top: 74%
+				transform: rotate(-33deg)
+				+md
+					display: none
+				[data-circle="3"] &
+					left: 183px
+					top: 12%
+				[data-circle="2"] &
+					left: 188px
+					top: 18% 
+			[data-circle="5"] &
+				top: -6%
+				right: 3%
+			[data-circle="4"] &
+				right: 3%
+				top: -6%
+			[data-circle="3"] &
+				left: 0%
+				top: 81%
+			[data-circle="2"] &
+				left: -4%
+				top: 62%  
+			
+		&:nth-child(4)
+			position: absolute
+			right: 0
+			top: 31%
+			&:before
+				content: ''
+				position: absolute
+				width: 68px
+				height: 2px
+				background: #2e5b72
+				left: -65px
+				top: 41%
+				+md
+					display: none
+				[data-circle="5"] &
+					transform: rotate(33deg)
+					left: -62px
+					top: 20%
+				[data-circle="4"] &
+					transform: rotate(33deg)
+					left: -62px
+					top: 20%
+					
+			+md
+				position: static
+			[data-circle="5"] &
+				top: 62%
+				right: 2% 
+			[data-circle="4"] &
+				top: 62%
+				right: 2% 
+		&:nth-child(5)
+			position: absolute
+			left: 5%
+			top: 77%
+			+md
+				position: static
+			&:before
+				content: ''
+				position: absolute
+				width: 68px
+				height: 2px
+				background: #2e5b72
+				right: -61px
+				top: 20%
+				transform: rotate(-33deg)
+				+md
+					display: none 
+		 
+		
+		&:nth-child(6)
+			position: absolute
+			right: 5%
+			top: 77%
+			+md
+				position: static
+			&:before
+				content: ''
+				position: absolute
+				width: 68px
+				height: 2px
+				background: #2e5b72
+				left: -62px
+				top: 22%
+				transform: rotate(33deg)
+				+md
+					display: none
+			[data-circle="5"] &
+				top: 1%
+				right: 49% 
+	&__icon
+		img
+			border: 2px solid #2e5b72
+			padding: 5px
+			border-radius: 50%
+			&:hover
+				border: 2px solid #f58220
+

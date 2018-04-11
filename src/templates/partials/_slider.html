@@ -1,0 +1,153 @@
+{% set
+	list = [
+		{	
+			data: '6',
+			item5: true,
+			item6: true,
+			fonr: true,
+			fonl: true,
+			title: 'Системна интеграция',
+			name: 'first'
+		},
+		{	
+			data: '5',
+			item1: true,
+			item2: true,
+			item3: true,
+			item4: true,
+			item5: false,
+			item6: true,
+			fonsmr: true,
+			fonr: false,
+			fonl: true,
+			title: 'Видеорегистратор',
+			name: 'second'
+		},
+		{	
+			data: '4',
+			item1: true,
+			item2: true,
+			item3: true,
+			item4: false,
+			item5: true,
+			item6: false,
+			fonsmr: true,
+			fonsml: true,
+			fonr: false,
+			fonl: false,
+			title: 'Устройство «ГЛОСАВ-МАРКЕР»',
+			name: 'three'
+
+		},
+		{	
+			data: '3',
+			item1: true,
+			item2: true,
+			item3: true,
+			item4: false,
+			item5: false,
+			item6: false,
+			fonsmr: false,
+			fonsml: false,
+			fonr: false,
+			fonl: true,
+			title: 'Бесконтактный считыватель',
+			name: 'four'
+		},
+		{	
+			data: '2',
+			item1: true,
+			item2: true,
+			item3: false,
+			item4: false,
+			item5: false,
+			item6: false,
+			fonsmr: false,
+			fonsml: true,
+			title: 'Спутниковое оборудование',
+			name: 'five'
+		},
+		{	
+			data: '1',
+			item1: true,
+			item2: false,
+			item3: false,
+			item4: false,
+			item5: false,
+			item6: false,
+			title: 'Тревожная кнопка',
+			name: 'six'
+		}
+	]
+	%}
+<div class="slider-wrapp">
+	<div class="slider">
+		<div class="slider__switch switch">
+			<div class="switch__title-from">Потяните</div>
+			<div class="switch__switcher switcher js-switcher"></div> 
+			<!-- <div class="switch__icon-from"></div> -->
+			<!-- <div class="switch__icon-to"></div> -->
+			<div class="switch__title-to">для просмотра</div>
+		</div>
+		<!-- <div class="slider__next"></div> -->
+		<div class="slider__slides js-slider">
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="first">
+					<div class="hero__img">
+						<img src="img/item-1.png" alt="slide"></div>
+					<div class="hero__title">Мониторинг и тахография</div>
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="second">
+					<div class="hero__img">
+						<img src="img/item-2.png" alt="slide"></div>
+					<div class="hero__title">Разработка по</div>
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="three">
+					<div class="hero__img">
+						<img src="img/item-2.png" alt="slide"></div>
+					<div class="hero__title">Системная Интеграция</div>
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="four">
+					<div class="hero__img">
+						<img src="img/item-2.png" alt="slide"></div>
+					<div class="hero__title">Технологии</div>
+				</div>
+			</div>
+
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="five">
+					<div class="hero__img">
+						<img src="img/item-1.png" alt="slide"></div>
+					<div class="hero__title">Мониторинг и тахография</div>
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="six">
+					<div class="hero__img">
+						<img src="img/item-2.png" alt="slide"></div>
+					<div class="hero__title">Разработка по</div>
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="six">
+					<div class="hero__img">
+						<img src="img/item-2.png" alt="slide"></div>
+					<div class="hero__title">Системная Интеграция</div>
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="hero js-hero" data-popap-triger="six">
+					<div class="hero__img">
+						<img src="img/item-2.png" alt="slide"></div>
+					<div class="hero__title">Технологии</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

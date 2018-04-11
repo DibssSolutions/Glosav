@@ -1,0 +1,98 @@
+.promo
+	position: relative
+	padding-bottom: 241px
+	+md
+		padding-bottom: 0
+	&__bg
+		background: url('../img/promog.png') no-repeat 50% 100%
+		background-size: cover
+		// padding-bottom: 22%
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		+md
+			position: relative
+			padding-bottom: 34%
+			margin-bottom: 15px
+	&__title
+		position: relative
+		margin-bottom: 15px
+
+.promo-content
+	padding: 35px 0  
+	&__photos
+		padding: 30px 0 
+		display: flex
+		align-items: center
+		+r(1024)
+			flex-direction: column
+			margin-bottom: 55px
+			padding: 0
+		&_mb
+			+r(1024)
+				margin-bottom: 0
+
+	&__photo
+		background-position-y: center
+		background-repeat: no-repeat
+		background-size: cover  
+		flex: 1.2
+		img
+			width: 100% 
+		&_marr
+			margin-right: 50px
+		+r(1024)
+			margin: 0 auto 35px
+	&__button
+		display: flex
+	&__text
+		flex: 2
+		&_marr
+			margin-right: 50px
+		+r(1024)
+			order: 1
+			margin: 0 auto
+	&_mod-right &__photo
+		&:first-child
+			flex: 1.2
+	&_mod-left &__text
+		&:last-child
+			flex: 2
+	// &__text
+	// 	margin-left: 50px
+	&__title
+		margin-bottom: 35px
+		+r(1024)
+			margin-bottom: 25px
+	&__descr
+		margin-bottom: 30px
+		p
+			line-height: 22px
+	&__wrap-video
+		position: relative
+	&__video
+		background-image: url(img/video.png)
+		padding: 17.6%
+		background-size: cover
+		margin-bottom: 60px
+		+md
+			background-position: 50%
+		+xs
+			padding: 31.4%
+			 
+		img
+			width: 100%
+	&__play
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		cursor: pointer
+		transition: opacity 1s
+		&:hover
+			opacity: 0.5 
+
+
+ 

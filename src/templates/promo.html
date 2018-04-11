@@ -1,0 +1,47 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<div class="wrap-bg">
+	<div class="promo">
+		{% include "partials/_header.html" %}
+		<div class="promo__bg"></div>
+		<!-- begin promo -->
+		<div class="promo__wrap wrap">
+			<div class="promo__title">
+				<h2 class="h2">Промо-страница</h2>
+			</div>
+			<div class="promo__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__dots js-dots">
+					<span class="breadcrumbs__dot"></span>
+					<span class="breadcrumbs__dot"></span>
+					<span class="breadcrumbs__dot"></span>
+				</div>
+				<div class="breadcrumbs__content">
+					<button class="breadcrumbs__close js-close">{{mixins.icon('close')}}</button>
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Продукты и решения</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span>Промо страница</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end promo -->
+	</div>
+	{% include "partials/_promo.html" %}
+	{% include "partials/_video.html" %}
+	{% include "partials/_footer.html" %}
+</div>
+
+{% include "partials/_popaps.html" %}
+
+{% endblock %}

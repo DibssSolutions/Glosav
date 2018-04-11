@@ -1,0 +1,190 @@
+.vnedrenie
+	position: relative
+	padding-bottom: 241px
+	+md
+		padding-bottom: 0
+	&__wrap
+		+md
+			background: #eaeff2
+	&__title
+		margin-bottom: 15px
+		padding-top: 15px
+	&__breadcrumbs
+		// margin-bottom: 35px
+	&__bg
+		background-image: linear-gradient(180deg, white 0%, rgba(234, 239, 242, 0.01) 50%, transparent 100%),  url('../img/vnedrenie.png')
+		background-repeat: no-repeat
+		background-position: 100% 100%
+		background-size: cover
+		// padding-bottom: 22%
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		+md
+			background-image: url('../img/vnedrenie.png')
+		+md
+			position: relative
+			padding-bottom: 34%
+
+.vnedrenie-content
+	background: #eaeff2
+	margin-top: -80px
+	+md
+		margin-top: 0
+		padding-top: 115px 
+	&__wrap
+		position: relative
+		margin: 0 auto
+		max-width: 1210px 
+	&__main
+		// margin-top: -80px
+		padding-bottom: 80px 
+		+clr
+	&__list
+		float: left
+		margin-right: 55px
+		max-width: 510px
+		padding: 35px 57px 40px 40px
+		background: #dee6eb
+		+sm
+			float: none
+			margin: 0 auto 40px
+			padding-top: 80px 
+			padding-left: 20px
+			padding-right: 20px 
+		.h3
+			margin-bottom: 35px
+			+md
+				margin-bottom: 30px
+		ul
+			padding-left: 13px
+			margin-bottom: 40px
+			li
+				list-style-type: none
+				position: relative
+				padding-left: 16px
+				line-height: 30px 
+				&::before 
+					position: absolute
+					top: 50%
+					left: 0
+					content: ''
+					margin-top: -3px 
+					width: 6px
+					height: 6px
+					background-color: #f58220
+					border-radius: 50%
+		p
+			line-height: 22px
+	&__descr
+		padding: 0 40px 
+		+sm
+			max-width: 600px
+			margin: 0 auto
+			padding: 0 
+		.h3
+			margin-bottom: 30px
+			+sm
+				padding: 0 20px 
+		p
+			margin-bottom: 30px
+			line-height: 22px
+			+sm
+				padding: 0 20px 
+		a
+			margin-top: 40px
+			display: block
+			text-decoration: none
+			color: #ee8a00
+			font-weight: 500
+			&:hover
+				color: #2c5b72
+			+sm
+				padding: 0 20px 
+	&__img
+		+sm
+			position: absolute
+			left: 0
+			right: 0
+			top: -80px
+			text-align: center 
+
+.slider-vnedrenie
+	&__inner
+		padding: 0 20px
+	&__title
+		margin-bottom: 30px
+	&__slides
+		margin: 0 -20px
+		font-size: 0
+	&__slide
+		padding: 0 20px
+		+r(400)
+			padding: 0 65px
+	&__prev
+		background: url('../img/prev-arrow.png') no-repeat center
+		width: 60px
+		height: 20px
+		cursor: pointer
+		position: absolute
+		top: 40%
+		transform: translate(0,-50%)
+		left: 10px
+		z-index: 10
+		+r(400)
+			left: 20px
+			top: 45%
+		&.open
+			display: none
+	&__next
+		background: url('../img/prev-arrow.png') no-repeat center
+		width: 60px
+		height: 20px
+		cursor: pointer
+		position: absolute
+		top: 40%
+		transform: translate(0,-50%) rotate(180deg)
+		right: 10px
+		z-index: 10
+		+r(400)
+			right: 20px
+			top: 45%
+		&.open
+			display: none
+
+.logo-bank
+	width: 160px
+	height: 160px
+	display: inline-block
+	background: #dee6eb
+	border-radius: 50%
+	text-align: center
+	position: relative
+	padding-top: 43px
+	&::before
+		content: ''
+		padding: 110px
+		border-radius: 50% 
+		position: absolute
+		top: -35px
+		left: -35px
+		border: 1px solid #212e3a
+		opacity: 0.08
+	&::after
+		content: ''
+		padding: 235px
+		border-radius: 50% 
+		position: absolute
+		top: -160px
+		left: -160px
+		border: 1px solid #212e3a
+		opacity: 0.08
+		+md
+			display: none
+	
+
+
+
+

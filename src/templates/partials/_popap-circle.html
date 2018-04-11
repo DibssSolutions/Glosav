@@ -1,0 +1,169 @@
+	{% set
+	list = [
+		{	
+			data: '6',
+			item5: true,
+			item6: true,
+			fonr: true,
+			fonl: true,
+			title: 'Системна интеграция',
+			name: 'first'
+		},
+		{	
+			data: '5',
+			item1: true,
+			item2: true,
+			item3: true,
+			item4: true,
+			item5: false,
+			item6: true,
+			fonsmr: true,
+			fonr: false,
+			fonl: true,
+			title: 'Видеорегистратор',
+			name: 'second'
+		},
+		{	
+			data: '4',
+			item1: true,
+			item2: true,
+			item3: true,
+			item4: false,
+			item5: true,
+			item6: false,
+			fonsmr: true,
+			fonsml: true,
+			fonr: false,
+			fonl: false,
+			title: 'Устройство «ГЛОСАВ-МАРКЕР»',
+			name: 'three'
+
+		},
+		{	
+			data: '3',
+			item1: true,
+			item2: true,
+			item3: true,
+			item4: false,
+			item5: false,
+			item6: false,
+			fonsmr: false,
+			fonsml: false,
+			fonr: false,
+			fonl: true,
+			title: 'Бесконтактный считыватель',
+			name: 'four'
+		},
+		{	
+			data: '2',
+			item1: true,
+			item2: true,
+			item3: false,
+			item4: false,
+			item5: false,
+			item6: false,
+			fonsmr: false,
+			fonsml: true,
+			title: 'Спутниковое оборудование',
+			name: 'five'
+		},
+		{	
+			data: '1',
+			item1: true,
+			item2: false,
+			item3: false,
+			item4: false,
+			item5: false,
+			item6: false,
+			title: 'Тревожная кнопка',
+			name: 'six'
+		}
+	]
+	%}
+	<!-- begin popap-circle -->
+	{% for item in list %}
+	<div class="popap-circle" data-circle="" data-popap="{{item.name}}">
+		<div class="popap-circle__wrap">
+			<div class="popap-circle__circle">
+				<div class="popap-circle__photo">
+					<img src="img/item-2.png" alt=""></div>
+				<div class="popap-circle__title">{{item.title}}</div>
+				<div class="popap-circle__back">
+					<a href="#" class="back js-back-popap">
+						<span class="back__line-top"></span>
+						<span class="back__line-bottom"></span>
+					</a>
+				</div>
+				<div class="popap-circle__bg"></div>
+				<div class="popap-circle__info">
+					<div class="popap-circle__descr">
+						<p>
+							Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования, который может включать: бортовой блок, смартфон, персональный трекер.
+						</p>
+					</div>
+					<div class="popap-circle__button">
+						<a href="#" class="btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="popap-circle__fon-left">
+				<img src="img/linel.png" alt="">
+			</div>
+			<div class="popap-circle__fon-sm">
+				<img src="img/svgo/small-left-line.svg" alt="">
+			</div>
+			<div class="popap-circle__list">
+				{% if item.item1 %}
+				<div class="popap-circle__item">
+					<div class="popap-circle__icon">
+						<img src="img/item-small.png" alt=""></div>
+					<div class="popap-circle__text">Поставка</div>
+				</div>
+				{% endif %}
+				{% if item.item2 %}
+				<div class="popap-circle__item">
+					<div class="popap-circle__icon">
+						<img src="img/item-small2.png" alt=""></div>
+					<div class="popap-circle__text">Монтаж</div>
+				</div>
+				{% endif %}
+				{% if item.item3 %}
+				<div class="popap-circle__item">
+					<div class="popap-circle__icon">
+						<img src="img/item-small3.png" alt=""></div>
+					<div class="popap-circle__text">Пусконаладка</div>
+				</div>
+				{% endif %}
+				{% if item.item4 %}
+				<div class="popap-circle__item">
+					<div class="popap-circle__icon">
+						<img src="img/item-small4.png" alt=""></div>
+					<div class="popap-circle__text">Поставка</div>
+				</div>
+				{% endif %}
+				{% if item.item5 %}
+				<div class="popap-circle__item">
+					<div class="popap-circle__icon">
+						<img src="img/item-small5.png" alt=""></div>
+					<div class="popap-circle__text">Монтаж</div>
+				</div>
+				{% endif %}
+				{% if item.item6 %}
+				<div class="popap-circle__item">
+					<div class="popap-circle__icon">
+						<img src="img/item-small6.png" alt=""></div>
+					<div class="popap-circle__text">Пусконаладка</div>
+				</div>
+				{% endif %}
+			</div>
+			<div class="popap-circle__fon-right">
+				<img src="img/linel.png" alt="">
+			</div>
+			<div class="popap-circle__fon-sm-r">
+				<img src="img/svgo/small-right-line.svg" alt="">
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+	<!-- end popap-circle -->
+

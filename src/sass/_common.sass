@@ -1,0 +1,231 @@
+body
+	color: #396f8c
+	font-family: $GothamPro
+	font-size: 14px
+	font-weight: 400
+	// overflow: hidden
+	+font-smoothing
+	&.open
+		overflow: hidden
+
+.inner
+	max-width: 1370px
+	padding:  0 40px
+	margin: 0 auto 
+	position: relative
+	&_mob
+		padding: 0 20px
+	+md
+		padding: 0 20px
+
+.wrap-bg
+	background: #eaeff2
+
+.wrap
+	max-width: 1210px
+	padding: 0 40px
+	margin: 0 auto
+	position: relative
+	+md
+		padding: 0 20px 
+
+.header-bg
+	background-image: linear-gradient(180deg, #c2d1da 0%, #eaeff2 100%)
+
+.footer-bg
+	background-image: linear-gradient(180deg, #eaeff2 0%, #c2d1da 100%)
+
+.page-header
+	padding: 24px 0 70px
+	+xs
+		padding: 25px 0 30px 
+	&_bg
+		background: #eaeff2 
+	&__title
+		margin-bottom: 20px  
+
+.button
+	background-color: #ee8a00
+	border-radius: 24px
+	color: white
+	font-family: $GothamPro
+	font-size: 16px
+	font-weight: 400
+	padding: 17px 55px
+
+.btn
+	display: block
+	color: white
+	font-family: $GothamPro
+	font-size: 14px
+	font-weight: 400
+	text-decoration: none
+	border: 1px solid white
+	border-radius: 14px
+	padding: 5px 20px
+	transition: 0.5s
+	background: transparent 
+	&:hover
+		color: #396f8c
+		background: #fff
+	&_darken
+		color: #2e5b72
+		border: 1px solid #7fa4bc
+		transition: 0.5s
+		&:hover
+			background-color: #2c5b72
+			color: white
+	&_big
+		padding: 5px 40px 
+.link
+	color: #2e5b72
+	text-decoration: none
+	background: transparent
+	&:hover
+		color: #f58220
+
+.back
+	background-color: #f58220
+	width: 43px
+	height: 43px
+	position: relative
+	border-radius: 50%
+	cursor: pointer
+	display: block
+	transition: background-color 0.5s
+	&:hover
+		background-color: #2c5b72 
+	&__line-top
+		position: absolute
+		top: 21px
+		left: 16px
+		// right: 0 
+		width: 12px
+		height: 1px
+		margin-bottom: 10px
+		background: white
+		cursor: pointer
+		transform: rotate(45deg)
+	&__line-bottom
+		position: absolute
+		top: 21px
+		left: 16px
+		width: 12px
+		height: 1px
+		margin-bottom: 10px
+		background: white
+		cursor: pointer
+		transform: rotate(-45deg)
+
+.h2
+	color: #2e5b72
+	font-size: 50px
+	font-weight: 500
+	+md
+		font-size: 30px
+
+.h3
+	color: #2c5b72
+	font-size: 24px
+	font-weight: 500
+	&_color
+		color: #2e5b72
+	+md
+		font-size: 20px
+
+.h4
+	color: #2c5b72
+	font-size: 16px
+	font-weight: 500
+
+.form
+	&__field
+		margin-bottom: 30px
+	.input, .textarea
+		padding: 20px
+		background-color: rgba(229, 237, 241, 1)
+		border-radius: 24px
+		width: 100%
+		&::placeholder
+			opacity: 0.7
+			color: #396f8c
+			font-family: $GothamPro
+			font-size: 14px
+			font-weight: 400
+	.input_bg, .textarea_bg
+		background: #cbd9e1
+
+.breadcrumbs
+	position: relative
+	&__dots
+		display: flex
+		display: none
+		+md
+			display: flex
+	&__dot
+		display: block
+		width: 4px
+		height: 4px
+		background-color: #95bed5
+		margin-right: 5px
+		&:last-child
+			margin-right: 0
+	&__content
+		position: relative
+		z-index: 10
+		+md
+			display: none
+		.open &
+			display: block
+			position: absolute
+	&__close
+		margin-top: 17px 
+		margin-bottom: 7px 
+		background: transparent
+		display: none
+		.open &
+			display: block
+		.icon-close
+			fill: #a0c5d9
+	&__list
+		display: flex
+		+md
+			display: block
+			max-width: 170px
+			background: #FFF
+			padding: 15px 0 15px 15px
+	&__item
+		position: relative
+		margin-right: 20px
+		&:not(:first-child):before
+			content: ''
+			position: absolute
+			background: #95bed5
+			width: 4px
+			height: 4px
+			left: -10px
+			margin-top: -2px 
+			top: 50%
+			border-radius: 50%
+		a
+			font-size: 12px
+			color: #2e5b72
+			text-decoration: none
+			border-bottom: 1px solid #c6d0d7
+		span
+			font-size: 12px
+			color: #7fa4bc
+		+md
+			&:not(:last-child)
+				margin-bottom: 15px
+			&:not(:first-child):before
+				display: none
+				content: ''
+				position: absolute
+				background: #95bed5
+				width: 4px
+				height: 4px
+				left: -10px
+				margin-top: -2px 
+				top: 50%
+				border-radius: 50%

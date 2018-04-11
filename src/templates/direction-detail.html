@@ -1,0 +1,49 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<div class="wrap-bg">
+	<div class="direction-detail">
+		{% include "partials/_header.html" %}
+		<div class="direction-detail__bg"></div>
+		<!-- begin direction-detail -->
+		<div class="direction-detail__wrap wrap">
+			<div class="direction-detail__title">
+				<h2 class="h2">Мониторинг транспорта</h2>
+			</div>
+			<div class="direction-detail__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__dots js-dots">
+					<span class="breadcrumbs__dot"></span>
+					<span class="breadcrumbs__dot"></span>
+					<span class="breadcrumbs__dot"></span>
+				</div>
+				<div class="breadcrumbs__content">
+				<button class="breadcrumbs__close js-close">{{mixins.icon('close')}}</button>
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Направления</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span>Мониторинг транспорта</span>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end direction-detail -->
+	</div>
+	{% include "partials/_direction-detail.html" %}
+
+
+	{% include "partials/_footer.html" %}
+</div>
+
+{% include "partials/_popaps.html" %}
+{% include "partials/_popap-napravlenie.html" %}
+
+{% endblock %}

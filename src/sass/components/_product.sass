@@ -1,0 +1,57 @@
+.product
+	background: #eaeff2
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		+r(555)
+			display: block
+			width: 80%
+			margin: 0 auto
+			padding-top: 0
+			padding-bottom: 40px  
+		+r(400)
+			width: 100%
+	&__title
+		position: absolute
+		text-align: center
+		top: 27% 
+		left: 0
+		right: 0
+		+md
+			max-width: 160px
+			margin: 0 auto 
+	&__item
+		background-repeat: no-repeat
+		width: 42.3%
+		margin-bottom: 105px
+		position: relative
+		transition: 1s
+		border-radius: 50%
+		padding: 15px
+		cursor: pointer
+		border: 1px solid transparent
+		&:hover
+			padding: 15px
+			border: 1px solid #2c5b72
+			border-radius: 50%
+			&:before
+				content: ''
+				position: absolute
+				left: 15px
+				top: 15px
+				right: 15px
+				bottom: 15px
+				background-color: #2e5b72
+				opacity: 0.8 
+				border-radius: 50%
+		&:hover .h3
+			color: white
+		+r(555)
+			width: 100%
+			margin: 0 auto 40px
+			&:last-child
+				margin-bottom: 0
+		img
+			width: 100%
+			display: block 

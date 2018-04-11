@@ -1,0 +1,31 @@
+---
+title: Системная интеграция
+---
+{% set
+breadcrumbs = [
+    {
+        link: 'Главная'
+    },
+    {
+        link: 'Продукты',
+        spans: true,
+        span: 'Системная интеграция'
+    }
+]
+%}
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<div class="wrap-bg">
+		{% include "partials/_header.html" %}
+		{% include "partials/_page-header.html" %}
+		{% include "partials/_list-products.html" %} 
+		{% include "partials/_footer.html" %}
+	</div>
+	
+	{% include "partials/_popaps.html" %}
+	
+
+
+{% endblock %}

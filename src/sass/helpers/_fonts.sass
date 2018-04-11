@@ -1,0 +1,26 @@
+// FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+//GothamPro
+//medium
+@font-face
+	+fontdefault(normal, 500, 'GothamPro')
+	+fontpath('GothamPro-Medium', 'GothamPro-Medium', 'GothamPro-Medium')
+
+@font-face
+	+fontdefault(italic, 500, 'GothamPro')
+	+fontpath('GothamPro-Medium', 'GothamPro-Medium', 'GothamPro-Medium')
+
+//regular
+@font-face
+	+fontdefault(normal, 400, 'GothamPro')
+	+fontpath('GothamPro', 'GothamPro', 'GothamPro')
+
+@font-face
+	+fontdefault(italic, 400, 'GothamPro')
+	+fontpath('GothamPro-Italic', 'GothamPro-Italic', 'GothamPro-italic')

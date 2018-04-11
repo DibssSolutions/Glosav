@@ -1,0 +1,369 @@
+{% set
+list = [
+    {
+        title: 'Отдел маркетинга и PR',
+        col1title: 'Телефони',
+        col1info1: '+7 (495) 644 33 59;',
+        coltel2: true,
+        col1info2: '+7 (800) 200 33 59,доб. 2,',
+        col2title: 'E-mail',
+        col2info1: 'commerce@glosav.ru',
+        col3title: 'График роботи',
+        col3info1: 'Пн.-Пт.: с 10:00 до 19:00'
+    },
+    {
+        title: 'Отдел кадров',
+        col1title: 'Телефони',
+        col1info1: '+7 (800) 200 33 59,доб. 2,',
+        col2title: 'E-mail',
+        col2info1: 'commerce@glosav.ru',
+        col3title: 'График роботи',
+        col3info1: 'Пн.-Пт.: с 10:00 до 19:00'
+    },
+    {
+        title: 'Отдел продаж',
+        col1title: 'Телефони',
+        col1info1: '+7 (495) 644 33 59;',
+        coltel2: true,
+        col1info2: '+7 (800) 200 33 59,доб. 2',
+        coltel3: true,
+        col1info3: '7 (495) 644 33 58',
+        col2title: 'E-mail',
+        col2info1: 'commerce@glosav.ru',
+        col2info:   true,
+        col2info2: 'commerce_info@glosav.ru', 
+        col3title: 'График роботи',
+        col3info1: 'Пн.-Пт.: с 10:00 до 19:00'
+    },
+    {
+        title: 'Техническая поддержка',
+        col1title: 'Телефони',
+        col1info1: '7 (800) 200 33 59,доб. 2',
+        coltel2: true,
+        col1info2: ' +7 (800) 200 33 59,доб. 2',
+        col2title: 'E-mail',
+        col2info1: 'upport@glosav.ru',
+        col3title: 'График роботи',
+        col3info1: 'Пн.-Пт.: с 10:00 до 19:00'
+    }
+]
+%}
+<!-- <div class="contact-page__wrapp">
+-->
+<!-- begin contact -->
+<div class="contact-page">
+    <div class="contact-page__wrap wrap">
+    <div class="contact-page__location location">
+        <span class="location__title">Адрес:</span>
+        <span class="location__description">
+            115114, Московская область, г. Москва, Кожевнический проезд, д. 1
+        </span>
+        <a href="#map" class="location__go">Схема проезда</a>
+    </div>
+    <div class="contact-page__phone phone">
+        <span class="phone__title">Многоканальний:</span>
+        <span class="phone__number">+7 (495) 644 33 59</span>
+    </div>
+</div>
+<div class="contact-page__content">
+    {% for item in list %}
+    <div class="contact-page__departament departament">
+        <div class="departament__wrapp">
+            <div class="departament__title">{{item.title}}</div>
+            <div class="departament__row">
+                <div class="departament__col">
+                    <div class="departament__info-title">{{item.col1title}}</div>
+                    <span class="departament__info">{{item.col1info1}}</span>
+                    <br>
+                    {% if item.coltel2 %}
+                    <span class="departament__info">{{item.col1info2}}</span>
+                    <br>
+                    {% endif %}
+                            {% if item.coltel3 %}
+                    <span class="departament__info">{{item.col1info3}}</span>
+                    {% endif %}
+                </div>
+                <div class="departament__col">
+                    <div class="departament__info-title">{{item.col2title}}</div>
+                    <a href="#" class="departament__info-m">{{item.col2info1}}</a>
+                    <br>
+                    {% if item.col2info %}
+                    <a href="#" class="departament__info-m">{{item.col2info2}}</a>
+                    {% endif %}
+                </div>
+                <div class="departament__col">
+                    <div class="departament__info-title">{{item.col3title}}</div>
+                    <div class="departament__info">{{item.col3info1}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="contact-page__map">
+    <div id="map" class="map" style="height: 465px;"></div>
+</div>
+</div>
+<script>
+      function initMap()
+      {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'),
+        {
+          center:
+          {
+            lat: 55.72781503,
+            lng: 37.64749749
+          },
+          zoom: 16,
+          styles: [
+                      {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#e9e3e3"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            },
+            {
+                "lightness": "47"
+            },
+            {
+                "color": "#556771"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": "24"
+            },
+            {
+                "weight": "0.93"
+            },
+            {
+                "gamma": "0.5"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#909da8"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#f0f0f0"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            },
+            {
+                "weight": "0.57"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#83acc5"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "30"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "40"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#c6c6c6"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2e5b72"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    }
+]
+
+});
+        addMarker(
+        {
+          lat: 55.72781503,
+          lng: 37.64749749
+        })
+
+        function addMarker(coordinates)
+        {
+          var marker = new google.maps.Marker(
+          {
+            position: coordinates,
+            map: map,
+            icon:
+            {
+              url: 'icons/map.svg',
+              scaledSize: new google.maps.Size(32, 40),
+            },
+          });
+        }
+      }
+
+    </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcdL-C4vs_ra7JKZkC0iW0TVAZwSbGo7Y&callback=initMap"></script>
+<!-- end contact -->
