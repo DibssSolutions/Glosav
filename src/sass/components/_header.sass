@@ -31,8 +31,10 @@
 		color: white
 
 .logo
+	display: block
 	&.open
-		display: none
+		+md
+			display: none
 	.icon-glosav-logo
 		font-size: 78px
 		+md
@@ -55,8 +57,11 @@
 		background: rgba(57, 111, 140, 0.2)
 		opacity: 0
 		transform: translate(100%,0)
-		transition: 1s
+		transition:  opacity, transform 1s
 		padding-left: 16px
+		+md
+			transform: translate(0,0)
+			opacity: 1
 		&_bg
 			background-color: #cadae3
 		&.open
@@ -77,6 +82,8 @@
 .menu
 	display: flex
 	flex-wrap: wrap
+	&__item:not(:first-child)
+		margin-left: 40px 
 	&__link
 		box-sizing: border-box
 		display: block
@@ -86,20 +93,22 @@
 		font-weight: 500
 		text-decoration: none
 		text-transform: uppercase
-		padding: 15px 7px 15px
 		position: relative
+		padding: 12px 0  
 		&:hover
 			color: #f58220
+		&.is-active
+			color: #ee8a00
 			&:before
 				content: ''
 				position: absolute
 				width: 5px
 				height: 5px
-				top: 7px
+				top: 0
 				border-radius: 50%
 				left: 50%
 				transform: translate(-50%, 0)
-				background: #eda541
+				background-color: #ee8a00
 
 
 .switcher-lang
@@ -170,19 +179,19 @@
 		position: absolute
 		left: -500%
 		background-color: #2c5b72
-		transition: 1s
+		transition: left 1s
 		&.open
 			left: 0
 			right: 0
 			z-index: 10000   
 	&__wrapp
-		margin: 0 auto
-		max-width: 280px
+		padding: 0 20px
 		transition: 2s
 	&__search
-		margin-bottom: 20px
+		margin-top: 12px 
+		margin-bottom: 35px
 	&__menu-mob
-		margin-bottom: 45px
+		margin-bottom: 68px
 	&__login
 		margin-bottom: 30px
 	&__switcher-lang
@@ -199,7 +208,7 @@
 		margin-bottom: 10px
 		background-color: #396f8c
 		cursor: pointer
-		transition: 0.5s
+		transition: transform 0.5s
 		&.open-top
 			transform: rotate(45deg)
 			top: 10px
@@ -212,7 +221,7 @@
 		margin-bottom: 10px
 		background-color: #396f8c
 		cursor: pointer
-		transition: 0.5s
+		transition: transform 0.5s
 		&.open-center
 			transform: rotate(-45deg)
 			background-color: #fff		
@@ -224,17 +233,18 @@
 		margin-bottom: 10px
 		background-color: #396f8c
 		cursor: pointer
-		transition: 0.3s
+		transition: top, opacity, background-color 0.3s
 		&.open-bottom
 			opacity: 0
 			top: 0
 			background-color: #fff
 
 .menu-mob
+	&__item:not(:last-child)
+		margin-bottom: 40px
 	&__link
 		display: block
 		text-decoration: none
-		padding: 20px 0
 		font-weight: 500 
 		color: white
 		text-transform: uppercase
@@ -244,7 +254,8 @@
 		text-decoration: none
 		color: white
 		opacity: 0.8
-		margin-right: 20px
+	&__title:not(:last-child)
+		margin-right: 22px
 	.is-active
 	 	opacity: 0.5
 

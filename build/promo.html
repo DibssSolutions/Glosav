@@ -44,7 +44,7 @@
                 </div>
                 <div class="header__menu">
                   <ul class="menu">
-                    <li class="menu__item"> <a href="page.html" class="menu__link">О компании</a> </li>
+                    <li class="menu__item"> <a href="page.html" class="menu__link ">О компании</a> </li>
                     <li class="menu__item"> <a href="#" class="menu__link">Направления</a> </li>
                     <li class="menu__item"> <a href="#" class="menu__link">Продукты</a> </li>
                     <li class="menu__item"> <a href="#" class="menu__link">Новости</a> </li>
@@ -205,16 +205,20 @@
         <!-- end promo-content -->
         <!--begin video -->
         <div class="video">
-          <div class="video__wrapp">
-            <div class="video__video"> <iframe src="https://www.youtube.com/embed/2se9Thz5zyg?ecver=2" width="640" height="360" frameborder="0" controlls allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
-            <div class="video__pause-play">
-              <div class="video__pause-play-icon"></div>
+          <div class="video__in">
+            <div class="video__wrapp">
+              <div class="video__video"> <iframe class="js-if" src="" width="1046" height="590" frameborder="0" controlls allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <!-- <iframe class="js-if" src="" width="1046" height="590" frameborder="0" controlls  allow="autoplay; encrypted-media" allowfullscreen></iframe> --></div>
+              <div class="video__pause-play">
+                <div class="video__pause-play-icon"></div>
+              </div>
+            </div>
+            <div class="video__button-close">
+              <a href="#" class="back js-back-video">
+                <div class="back__icon"> <img src="img/back.png" alt="back"> </div>
+              </a>
             </div>
           </div>
-          <div class="video__button-close"> <a class="back js-back-video">
-			<span class="back__line-top"></span>
-			<span class="back__line-bottom"></span>
-		</a> </div>
         </div>
         <!-- end video -->
         <!-- begin footer -->
@@ -262,7 +266,9 @@
               <div class="form__submit"> <button class="button js-button">Войти</button> </div>
             </div>
             <div class="content__back">
-              <div class="back js-back-close"> <span class="back__line-top"></span> <span class="back__line-bottom"></span> </div>
+              <div class="back js-back-close">
+                <div class="back__icon"> <img src="img/back.png" alt="back"> </div>
+              </div>
             </div>
           </div>
         </div>

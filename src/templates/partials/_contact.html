@@ -42,7 +42,7 @@ list = [
         coltel2: true,
         col1info2: ' +7 (800) 200 33 59,доб. 2',
         col2title: 'E-mail',
-        col2info1: 'upport@glosav.ru',
+        col2info1: 'support@glosav.ru',
         col3title: 'График роботи',
         col3info1: 'Пн.-Пт.: с 10:00 до 19:00'
     }
@@ -71,27 +71,27 @@ list = [
         <div class="departament__wrapp">
             <div class="departament__title">{{item.title}}</div>
             <div class="departament__row">
-                <div class="departament__col">
+                <div class="departament__col1">
                     <div class="departament__info-title">{{item.col1title}}</div>
                     <span class="departament__info">{{item.col1info1}}</span>
-                    <br>
                     {% if item.coltel2 %}
                     <span class="departament__info">{{item.col1info2}}</span>
-                    <br>
                     {% endif %}
-                            {% if item.coltel3 %}
+                    <br>
+                    {% if item.coltel3 %}
                     <span class="departament__info">{{item.col1info3}}</span>
                     {% endif %}
                 </div>
-                <div class="departament__col">
+                <div class="departament__col2">
                     <div class="departament__info-title">{{item.col2title}}</div>
-                    <a href="#" class="departament__info-m">{{item.col2info1}}</a>
-                    <br>
+                    <div class="departament__info-m"">
+                        <a href="#" class="departament__email">{{item.col2info1}}</a>
+                    </div>
                     {% if item.col2info %}
-                    <a href="#" class="departament__info-m">{{item.col2info2}}</a>
+                    <a href="#" class="departament__email">{{item.col2info2}}</a>
                     {% endif %}
                 </div>
-                <div class="departament__col">
+                <div class="departament__col3">
                     <div class="departament__info-title">{{item.col3title}}</div>
                     <div class="departament__info">{{item.col3info1}}</div>
                 </div>

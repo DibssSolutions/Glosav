@@ -9,7 +9,7 @@
 	// height: 100vh
 	// padding-top: 100px 	
 	height: 100%
-	background: #eaeff2
+	// background: rgba(231, 234, 236, 0.7)
 	display: none
 	&.open
 		display: block
@@ -19,17 +19,21 @@
 		z-index: 100
 		overflow: auto
 		padding-top: 100px
+		background: #eaeff2
 	&__wrap
 		position: relative
-		max-width: 920px
-		margin: 0 auto
+		padding: 36px 0 36px
+		background: radial-gradient(circle, #e8ebed 30%, transparent 100%)
 		top: 50%
 		transform: translate(0, -50%)
-		// padding: 20px 0
 		+md
 			top: 0
 			transform: translate(0, 0)
-			padding: 0 20px 
+			padding: 0 20px
+	&__in
+		position: relative
+		max-width: 920px
+		margin: 0 auto
 	&__photo
 		display: none
 		position: relative
@@ -63,8 +67,8 @@
 			background-size: 93% 100%
 	&__fon-left
 		position: absolute
-		top: 14%
-		left: 22%
+		top: 60px
+		left: 202px
 		[data-circle="2"] &
 			display: none
 		[data-circle="1"] &
@@ -75,8 +79,8 @@
 			display: none
 	&__fon-sm
 		position: absolute
-		left: 22%
-		top: 28%
+		left: 202px
+		top: 116px
 		[data-circle="6"] &
 			display: none
 		[data-circle="5"] &
@@ -89,8 +93,8 @@
 			display: none
 	&__fon-sm-r
 		position: absolute
-		right: 22%
-		top: 28%
+		right: 202px
+		top: 116px
 		[data-circle="1"] &
 			display: none
 		[data-circle="2"] &
@@ -103,8 +107,8 @@
 			display: none
 	&__fon-right
 		position: absolute
-		top: 14%
-		right: 22%
+		top: 60px
+		right: 202px
 		transform: rotate(180deg)
 		[data-circle="2"] &
 			display: none
@@ -153,9 +157,24 @@
 			+md
 				display: none
 	&__bg
+		// background: rgba(93, 131, 151, 0.7)
+		background-image: url("../img/item-2.png")
+		position: absolute
+		background-size: 100% 100%
+		border-radius: 50%
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		+md
+			display: none
+	&__img
+		position: absolute
 		background: rgba(93, 131, 151, 0.7)
 		position: absolute
+		background-size: 100% 100%
 		border-radius: 50%
+		z-index: 1
 		left: 0
 		right: 0
 		top: 0
@@ -164,6 +183,7 @@
 			display: none
 	&__info
 		position: relative
+		z-index: 2
 	&__descr
 		color: white
 		font-family: $GothamPro
@@ -249,8 +269,8 @@
 			margin-bottom: 15px
 		&:nth-child(1)
 			position: absolute
-			left: 6%
-			top: -19%
+			left: 56px
+			top: -78px
 			+md
 				position: static
 			&:before
@@ -259,25 +279,25 @@
 				width: 68px
 				height: 2px
 				background: #2e5b72
-				right: -56px
-				top: 74%
+				right: -54px
+				top: 72%
 				transform: rotate(33deg)
 				+md
 					display: none
 				[data-circle="1"] &
 					display: none
 			[data-circle="1"] &
-				top: 0%
+				top: 0
 			[data-circle="4"] &
-				top: -5%
-				left: 3%
+				left: 28px
+				top: -20px
 			[data-circle="2"] &
-				top: -5%
-				left: 3% 
+				left: 28px
+				top: -20px
 		&:nth-child(3)
 			position: absolute
-			left: 0
-			top: 31%
+			left: -4px
+			top: 128px
 			+md
 				position: static
 			&:before
@@ -295,13 +315,13 @@
 					top: 23%
 					right: -63px
 			[data-circle="4"] &
-				top: 60%
-				left: 2%
+				left: 17px
+				top: 250px
 				
 		&:nth-child(2)
 			position: absolute
-			right: 6%
-			top: -19%
+			right: 26px
+			top: -26px
 			+md
 				position: static
 			&:before
@@ -317,27 +337,28 @@
 					display: none
 				[data-circle="3"] &
 					left: 183px
-					top: 12%
+					top: 20px
 				[data-circle="2"] &
 					left: 188px
 					top: 18% 
 			[data-circle="5"] &
-				top: -6%
-				right: 3%
+				right: 26px
+				top: -26px
 			[data-circle="4"] &
-				right: 3%
-				top: -6%
+				right: 26px
+				top: -26px
 			[data-circle="3"] &
-				left: 0%
-				top: 81%
+				left: 0
+				top: 335px 
 			[data-circle="2"] &
-				left: -4%
-				top: 62%  
+				left: -35px
+				top: 259px
+				
 			
 		&:nth-child(4)
 			position: absolute
-			right: 0
-			top: 31%
+			right: 20px
+			top: 257px
 			&:before
 				content: ''
 				position: absolute
@@ -367,8 +388,8 @@
 				right: 2% 
 		&:nth-child(5)
 			position: absolute
-			left: 5%
-			top: 77%
+			left: 50px
+			top: 321px
 			+md
 				position: static
 			&:before
@@ -411,4 +432,6 @@
 			border-radius: 50%
 			&:hover
 				border: 2px solid #f58220
+	&__item
+		text-decoration: none
 

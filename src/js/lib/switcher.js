@@ -18,6 +18,8 @@ if ($(switcher).length) {
     console.log(+values[0]);
     if (+values[0] === 10) {
       $('.video').addClass('open');
+      event.preventDefault();
+      $('.js-if').attr('src','https://www.youtube.com/embed/2se9Thz5zyg?ecver=2');
       $('body').addClass('open');
       $('.slider').addClass('close');
     }

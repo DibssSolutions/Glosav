@@ -16,3 +16,4 @@ import './lib/slider-direction.js';
 import './lib/breadcrombs.js';
 import './lib/slider-vnedrenie.js';
 import './lib/popap-napravlenie';
+import './lib/dot.js';

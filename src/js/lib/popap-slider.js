@@ -4,6 +4,7 @@ trigerPopap.click(function() {
   var popapName = $(this).data('popap-triger');
   // console.log(propName);
   	$('[data-popap="'+popapName+'"]').addClass('open');
+  	$('body').addClass('open');
 });
 
 

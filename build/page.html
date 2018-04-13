@@ -42,7 +42,7 @@
             </div>
             <div class="header__menu">
               <ul class="menu">
-                <li class="menu__item"> <a href="page.html" class="menu__link">О компании</a> </li>
+                <li class="menu__item"> <a href="page.html" class="menu__link is-active">О компании</a> </li>
                 <li class="menu__item"> <a href="#" class="menu__link">Направления</a> </li>
                 <li class="menu__item"> <a href="#" class="menu__link">Продукты</a> </li>
                 <li class="menu__item"> <a href="#" class="menu__link">Новости</a> </li>
@@ -85,16 +85,20 @@
       <!-- end header-mobile -->
       <!--begin video -->
       <div class="video">
-        <div class="video__wrapp">
-          <div class="video__video"> <iframe src="https://www.youtube.com/embed/2se9Thz5zyg?ecver=2" width="640" height="360" frameborder="0" controlls allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
-          <div class="video__pause-play">
-            <div class="video__pause-play-icon"></div>
+        <div class="video__in">
+          <div class="video__wrapp">
+            <div class="video__video"> <iframe class="js-if" src="" width="1046" height="590" frameborder="0" controlls allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <!-- <iframe class="js-if" src="" width="1046" height="590" frameborder="0" controlls  allow="autoplay; encrypted-media" allowfullscreen></iframe> --></div>
+            <div class="video__pause-play">
+              <div class="video__pause-play-icon"></div>
+            </div>
+          </div>
+          <div class="video__button-close">
+            <a href="#" class="back js-back-video">
+              <div class="back__icon"> <img src="img/back.png" alt="back"> </div>
+            </a>
           </div>
         </div>
-        <div class="video__button-close"> <a class="back js-back-video">
-			<span class="back__line-top"></span>
-			<span class="back__line-bottom"></span>
-		</a> </div>
       </div>
       <!-- end video -->
       <div class="slider-wrapp">
@@ -102,57 +106,70 @@
           <div class="slider__switch switch">
             <div class="switch__title-from">Потяните</div>
             <div class="switch__switcher switcher js-switcher"></div>
-            <!-- <div class="switch__icon-from"></div> -->
-            <!-- <div class="switch__icon-to"></div> -->
             <div class="switch__title-to">для просмотра</div>
           </div>
-          <!-- <div class="slider__next"></div> -->
           <div class="slider__slides js-slider">
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="first">
-                <div class="hero__img"> <img src="img/item-1.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-1.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Мониторинг и тахография</div>
               </div>
             </div>
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="second">
-                <div class="hero__img"> <img src="img/item-2.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-2.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Разработка по</div>
               </div>
             </div>
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="three">
-                <div class="hero__img"> <img src="img/item-2.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-2.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Системная Интеграция</div>
               </div>
             </div>
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="four">
-                <div class="hero__img"> <img src="img/item-2.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-2.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Технологии</div>
               </div>
             </div>
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="five">
-                <div class="hero__img"> <img src="img/item-1.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-1.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Мониторинг и тахография</div>
               </div>
             </div>
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="six">
-                <div class="hero__img"> <img src="img/item-2.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-2.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Разработка по</div>
               </div>
             </div>
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="six">
-                <div class="hero__img"> <img src="img/item-2.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-2.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Системная Интеграция</div>
               </div>
             </div>
             <div class="slider__slide">
               <div class="hero js-hero" data-popap-triger="six">
-                <div class="hero__img"> <img src="img/item-2.png" alt="slide"></div>
+                <div class="hero__img">
+                  <div class="hero__icon"> <img src="img/item-2.png" alt="slide"> </div>
+                </div>
                 <div class="hero__title">Технологии</div>
               </div>
             </div>
@@ -203,7 +220,9 @@
               <div class="form__submit"> <button class="button js-button">Войти</button> </div>
             </div>
             <div class="content__back">
-              <div class="back js-back-close"> <span class="back__line-top"></span> <span class="back__line-bottom"></span> </div>
+              <div class="back js-back-close">
+                <div class="back__icon"> <img src="img/back.png" alt="back"> </div>
+              </div>
             </div>
           </div>
         </div>
@@ -211,226 +230,250 @@
       <!-- begin popap-circle -->
       <div class="popap-circle" data-circle="" data-popap="first">
         <div class="popap-circle__wrap">
-          <div class="popap-circle__circle">
-            <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
-            <div class="popap-circle__title">Системна интеграция</div>
-            <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
-						<span class="back__line-top"></span>
-						<span class="back__line-bottom"></span>
+          <div class="popap-circle__in">
+            <div class="popap-circle__circle">
+              <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
+              <div class="popap-circle__title">Системна интеграция</div>
+              <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
+						<span class="back__icon">
+							<img src="img/back.png" alt="back">
+						</span>
 					</a> </div>
-            <div class="popap-circle__bg"></div>
-            <div class="popap-circle__info">
-              <div class="popap-circle__descr">
-                <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
-                  который может включать: бортовой блок, смартфон, персональный трекер. </p>
+              <div class="popap-circle__bg"></div>
+              <div class="popap-circle__img"></div>
+              <div class="popap-circle__info">
+                <div class="popap-circle__descr">
+                  <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
+                    который может включать: бортовой блок, смартфон, персональный трекер. </p>
+                </div>
+                <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
               </div>
-              <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
             </div>
+            <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm"> <img src="./img/small-left-line.svg" alt=""> </div>
+            <div class="popap-circle__list">
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small5.png" alt=""></div>
+                <div class="popap-circle__text">Монтаж</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small6.png" alt=""></div>
+                <div class="popap-circle__text">Пусконаладка</div>
+              </a>
+            </div>
+            <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm-r"> <img src="./img/svgo/small-right-line.svg" alt=""> </div>
           </div>
-          <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm"> <img src="img/svgo/small-left-line.svg" alt=""> </div>
-          <div class="popap-circle__list">
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small5.png" alt=""></div>
-              <div class="popap-circle__text">Монтаж</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small6.png" alt=""></div>
-              <div class="popap-circle__text">Пусконаладка</div>
-            </div>
-          </div>
-          <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm-r"> <img src="img/svgo/small-right-line.svg" alt=""> </div>
         </div>
       </div>
       <div class="popap-circle" data-circle="" data-popap="second">
         <div class="popap-circle__wrap">
-          <div class="popap-circle__circle">
-            <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
-            <div class="popap-circle__title">Видеорегистратор</div>
-            <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
-						<span class="back__line-top"></span>
-						<span class="back__line-bottom"></span>
+          <div class="popap-circle__in">
+            <div class="popap-circle__circle">
+              <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
+              <div class="popap-circle__title">Видеорегистратор</div>
+              <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
+						<span class="back__icon">
+							<img src="img/back.png" alt="back">
+						</span>
 					</a> </div>
-            <div class="popap-circle__bg"></div>
-            <div class="popap-circle__info">
-              <div class="popap-circle__descr">
-                <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
-                  который может включать: бортовой блок, смартфон, персональный трекер. </p>
+              <div class="popap-circle__bg"></div>
+              <div class="popap-circle__img"></div>
+              <div class="popap-circle__info">
+                <div class="popap-circle__descr">
+                  <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
+                    который может включать: бортовой блок, смартфон, персональный трекер. </p>
+                </div>
+                <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
               </div>
-              <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
             </div>
+            <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm"> <img src="./img/small-left-line.svg" alt=""> </div>
+            <div class="popap-circle__list">
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
+                <div class="popap-circle__text">Поставка</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
+                <div class="popap-circle__text">Монтаж</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small3.png" alt=""></div>
+                <div class="popap-circle__text">Пусконаладка</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small4.png" alt=""></div>
+                <div class="popap-circle__text">Поставка</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small6.png" alt=""></div>
+                <div class="popap-circle__text">Пусконаладка</div>
+              </a>
+            </div>
+            <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm-r"> <img src="./img/svgo/small-right-line.svg" alt=""> </div>
           </div>
-          <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm"> <img src="img/svgo/small-left-line.svg" alt=""> </div>
-          <div class="popap-circle__list">
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
-              <div class="popap-circle__text">Поставка</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
-              <div class="popap-circle__text">Монтаж</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small3.png" alt=""></div>
-              <div class="popap-circle__text">Пусконаладка</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small4.png" alt=""></div>
-              <div class="popap-circle__text">Поставка</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small6.png" alt=""></div>
-              <div class="popap-circle__text">Пусконаладка</div>
-            </div>
-          </div>
-          <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm-r"> <img src="img/svgo/small-right-line.svg" alt=""> </div>
         </div>
       </div>
       <div class="popap-circle" data-circle="" data-popap="three">
         <div class="popap-circle__wrap">
-          <div class="popap-circle__circle">
-            <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
-            <div class="popap-circle__title">Устройство «ГЛОСАВ-МАРКЕР»</div>
-            <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
-						<span class="back__line-top"></span>
-						<span class="back__line-bottom"></span>
+          <div class="popap-circle__in">
+            <div class="popap-circle__circle">
+              <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
+              <div class="popap-circle__title">Устройство «ГЛОСАВ-МАРКЕР»</div>
+              <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
+						<span class="back__icon">
+							<img src="img/back.png" alt="back">
+						</span>
 					</a> </div>
-            <div class="popap-circle__bg"></div>
-            <div class="popap-circle__info">
-              <div class="popap-circle__descr">
-                <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
-                  который может включать: бортовой блок, смартфон, персональный трекер. </p>
+              <div class="popap-circle__bg"></div>
+              <div class="popap-circle__img"></div>
+              <div class="popap-circle__info">
+                <div class="popap-circle__descr">
+                  <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
+                    который может включать: бортовой блок, смартфон, персональный трекер. </p>
+                </div>
+                <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
               </div>
-              <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
             </div>
+            <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm"> <img src="./img/small-left-line.svg" alt=""> </div>
+            <div class="popap-circle__list">
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
+                <div class="popap-circle__text">Поставка</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
+                <div class="popap-circle__text">Монтаж</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small3.png" alt=""></div>
+                <div class="popap-circle__text">Пусконаладка</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small5.png" alt=""></div>
+                <div class="popap-circle__text">Монтаж</div>
+              </a>
+            </div>
+            <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm-r"> <img src="./img/svgo/small-right-line.svg" alt=""> </div>
           </div>
-          <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm"> <img src="img/svgo/small-left-line.svg" alt=""> </div>
-          <div class="popap-circle__list">
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
-              <div class="popap-circle__text">Поставка</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
-              <div class="popap-circle__text">Монтаж</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small3.png" alt=""></div>
-              <div class="popap-circle__text">Пусконаладка</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small5.png" alt=""></div>
-              <div class="popap-circle__text">Монтаж</div>
-            </div>
-          </div>
-          <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm-r"> <img src="img/svgo/small-right-line.svg" alt=""> </div>
         </div>
       </div>
       <div class="popap-circle" data-circle="" data-popap="four">
         <div class="popap-circle__wrap">
-          <div class="popap-circle__circle">
-            <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
-            <div class="popap-circle__title">Бесконтактный считыватель</div>
-            <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
-						<span class="back__line-top"></span>
-						<span class="back__line-bottom"></span>
+          <div class="popap-circle__in">
+            <div class="popap-circle__circle">
+              <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
+              <div class="popap-circle__title">Бесконтактный считыватель</div>
+              <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
+						<span class="back__icon">
+							<img src="img/back.png" alt="back">
+						</span>
 					</a> </div>
-            <div class="popap-circle__bg"></div>
-            <div class="popap-circle__info">
-              <div class="popap-circle__descr">
-                <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
-                  который может включать: бортовой блок, смартфон, персональный трекер. </p>
+              <div class="popap-circle__bg"></div>
+              <div class="popap-circle__img"></div>
+              <div class="popap-circle__info">
+                <div class="popap-circle__descr">
+                  <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
+                    который может включать: бортовой блок, смартфон, персональный трекер. </p>
+                </div>
+                <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
               </div>
-              <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
             </div>
+            <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm"> <img src="./img/small-left-line.svg" alt=""> </div>
+            <div class="popap-circle__list">
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
+                <div class="popap-circle__text">Поставка</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
+                <div class="popap-circle__text">Монтаж</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small3.png" alt=""></div>
+                <div class="popap-circle__text">Пусконаладка</div>
+              </a>
+            </div>
+            <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm-r"> <img src="./img/svgo/small-right-line.svg" alt=""> </div>
           </div>
-          <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm"> <img src="img/svgo/small-left-line.svg" alt=""> </div>
-          <div class="popap-circle__list">
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
-              <div class="popap-circle__text">Поставка</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
-              <div class="popap-circle__text">Монтаж</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small3.png" alt=""></div>
-              <div class="popap-circle__text">Пусконаладка</div>
-            </div>
-          </div>
-          <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm-r"> <img src="img/svgo/small-right-line.svg" alt=""> </div>
         </div>
       </div>
       <div class="popap-circle" data-circle="" data-popap="five">
         <div class="popap-circle__wrap">
-          <div class="popap-circle__circle">
-            <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
-            <div class="popap-circle__title">Спутниковое оборудование</div>
-            <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
-						<span class="back__line-top"></span>
-						<span class="back__line-bottom"></span>
+          <div class="popap-circle__in">
+            <div class="popap-circle__circle">
+              <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
+              <div class="popap-circle__title">Спутниковое оборудование</div>
+              <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
+						<span class="back__icon">
+							<img src="img/back.png" alt="back">
+						</span>
 					</a> </div>
-            <div class="popap-circle__bg"></div>
-            <div class="popap-circle__info">
-              <div class="popap-circle__descr">
-                <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
-                  который может включать: бортовой блок, смартфон, персональный трекер. </p>
+              <div class="popap-circle__bg"></div>
+              <div class="popap-circle__img"></div>
+              <div class="popap-circle__info">
+                <div class="popap-circle__descr">
+                  <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
+                    который может включать: бортовой блок, смартфон, персональный трекер. </p>
+                </div>
+                <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
               </div>
-              <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
             </div>
+            <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm"> <img src="./img/small-left-line.svg" alt=""> </div>
+            <div class="popap-circle__list">
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
+                <div class="popap-circle__text">Поставка</div>
+              </a>
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
+                <div class="popap-circle__text">Монтаж</div>
+              </a>
+            </div>
+            <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm-r"> <img src="./img/svgo/small-right-line.svg" alt=""> </div>
           </div>
-          <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm"> <img src="img/svgo/small-left-line.svg" alt=""> </div>
-          <div class="popap-circle__list">
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
-              <div class="popap-circle__text">Поставка</div>
-            </div>
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small2.png" alt=""></div>
-              <div class="popap-circle__text">Монтаж</div>
-            </div>
-          </div>
-          <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm-r"> <img src="img/svgo/small-right-line.svg" alt=""> </div>
         </div>
       </div>
       <div class="popap-circle" data-circle="" data-popap="six">
         <div class="popap-circle__wrap">
-          <div class="popap-circle__circle">
-            <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
-            <div class="popap-circle__title">Тревожная кнопка</div>
-            <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
-						<span class="back__line-top"></span>
-						<span class="back__line-bottom"></span>
+          <div class="popap-circle__in">
+            <div class="popap-circle__circle">
+              <div class="popap-circle__photo"> <img src="img/item-2.png" alt=""></div>
+              <div class="popap-circle__title">Тревожная кнопка</div>
+              <div class="popap-circle__back"> <a href="#" class="back js-back-popap">
+						<span class="back__icon">
+							<img src="img/back.png" alt="back">
+						</span>
 					</a> </div>
-            <div class="popap-circle__bg"></div>
-            <div class="popap-circle__info">
-              <div class="popap-circle__descr">
-                <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
-                  который может включать: бортовой блок, смартфон, персональный трекер. </p>
+              <div class="popap-circle__bg"></div>
+              <div class="popap-circle__img"></div>
+              <div class="popap-circle__info">
+                <div class="popap-circle__descr">
+                  <p> Система для компаний, занимающихся дистрибуцией. Может быть использована как для оснащения транспортных средств, так и для оснащения персонала. В зависимости от специфики компании выбирается наиболее рациональный комплект оборудования,
+                    который может включать: бортовой блок, смартфон, персональный трекер. </p>
+                </div>
+                <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
               </div>
-              <div class="popap-circle__button"> <a href="#" class="btn">Подробнее</a> </div>
             </div>
-          </div>
-          <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm"> <img src="img/svgo/small-left-line.svg" alt=""> </div>
-          <div class="popap-circle__list">
-            <div class="popap-circle__item">
-              <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
-              <div class="popap-circle__text">Поставка</div>
+            <div class="popap-circle__fon-left"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm"> <img src="./img/small-left-line.svg" alt=""> </div>
+            <div class="popap-circle__list">
+              <a href="#" class="popap-circle__item">
+                <div class="popap-circle__icon"> <img src="img/item-small.png" alt=""></div>
+                <div class="popap-circle__text">Поставка</div>
+              </a>
             </div>
+            <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
+            <div class="popap-circle__fon-sm-r"> <img src="./img/svgo/small-right-line.svg" alt=""> </div>
           </div>
-          <div class="popap-circle__fon-right"> <img src="img/linel.png" alt=""> </div>
-          <div class="popap-circle__fon-sm-r"> <img src="img/svgo/small-right-line.svg" alt=""> </div>
         </div>
       </div>
       <!-- end popap-circle -->

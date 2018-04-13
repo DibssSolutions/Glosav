@@ -4,15 +4,12 @@ var prev = $('.slider-direction__prev'),
   	close = $('.slider-direction__btn-close');
 
 $('.js-slider-direction').slick({
-			 // centerMode: true,
 			 slidesToShow: 4,
 			 slidesToScroll: 1,
 			 adaptiveHeight: true,
 			 draggable: true,
 			 prevArrow: '.slider-direction__prev',
 			 nextArrow: '.slider-direction__next',
-			 // swipe: false,
-			 // useCSS: false,
 			 responsive: [
 			    {
 			      breakpoint: 1024,
