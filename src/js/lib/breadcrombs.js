@@ -1,6 +1,6 @@
 var removeClass = true;
 var dots = $('.js-dots');
-var close = $('.dots-menu-close');
+var close = $('.js-close');
 
 dots.click(function() {
   $(this).parents('.breadcrumbs')

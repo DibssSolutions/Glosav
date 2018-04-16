@@ -1,9 +1,15 @@
-$('.switcher-lang').click(function() {
+var lang = $('.switcher-lang');
+
+lang.click(function(event) {
   if ( $(this).hasClass('open') ) {
     $(this).removeClass('open');
   }else {
-    $('.switcher-lang').removeClass('open');
-    $(this).addClass('open');
+    lang.removeClass('open');
     $(this).addClass('open');
   }
+  event.stopPropagation();
+});
+
+$('body').click(function() {
+  lang.removeClass('open');
 });

@@ -7,29 +7,11 @@ active: true
 
 {% block content %}
 	
-	{# variable example #}
-	{# <h1>{{title}}</h1> #}
-
-	
-	{# partial example #}
 		{% include "partials/_header.html" %}
 		{% include "partials/_video.html" %}
 		{% include "partials/_slider.html" %}
 		{% include "partials/_footer.html" %}
 		{% include "partials/_popaps.html" %}
 		{% include "partials/_popap-circle.html" %}
-
-
-	{# mixin example #}
-	{# {{mixins.icon('facebook')}} #}
-
-
-	{# data usage example #}
-		{# {% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %} #}
-	{# end of example #}
 
 {% endblock %}
